@@ -1,0 +1,43 @@
+<%- include('includes/head.ejs'); -%>
+<!--
+<form action="/edit" name="edit" method = "post">
+  <p> Task name: <input name="name"></p>
+  <p> </p>Task info: <textarea name="info" type="text"></textarea></p>
+  <p> </p>Deadline: <input name="deadline" type="date"></p>
+  <p> </p><input type="submit" value="submit"></p>
+</form>
+-->
+<div class="container contact-form">
+  <div class="contact-image">
+      <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+  </div>
+  <form action="/edit" method="post" >
+      <h3>Create your task</h3>
+     <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <input type="text" name="name" class="form-control" placeholder="Name task *" value="" />
+              </div>
+              
+              <div class="form-group">
+                <label for="example-date-input" class="col-2 col-form-label">Deadline:</label>
+                <div class="col-md-6">
+                  <input class="form-control" type="deadline" value="2021-01-01" id="example-date-input">
+                </div>
+              </div>
+              <p></p>
+              <div class="form-group">
+                  <input type="submit" name="btnSubmit" class="btnContact" value="Create task" />
+              </div>
+              
+          </div>
+
+          
+          <div class="col-md-6">
+              <div class="form-group">
+                  <textarea name="info" class="form-control" placeholder="More info *" style="width: 100%; height: 150px;"></textarea>
+              </div>
+          </div>
+      </div>
+  </form>
+</div>
